@@ -8,23 +8,10 @@ defined('ROOT') ?: define('ROOT', dirname(__DIR__) . DS);
 
 return [
 	'settings' => [
-		'displayErrorDetails'		=> getenv('APP_DEBUG') === 'true' ? true ; false,
+		'displayErrorDetails'		=> true,
 		'addContentLengthHeader'	=> false,
-		'app'						=> [
-			'name' => getenv('APP_NAME'),
-			'url' => getenv('APP_URL'),
-			'env' => getenv('APP_ENV'),
-	],
-
-	'renderer' => [
-		'template_path' => __DIR__ . '/../template/',
-	],
-
-	'jwt' => [
-		'secret' => getenv('JWT_SECRET'),
-		'secure' => false,
-		'header' => "Authorization",
-		"regexp" => "/Token\s+(.*)$/i",
-		'passthrough' => ['OPTIONS']
-	],
+		'renderer' => [
+			'template_path' => __DIR__ . '/../templates/'
+		]
+	]
 ];
