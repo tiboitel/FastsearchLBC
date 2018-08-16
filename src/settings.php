@@ -12,6 +12,9 @@ return [
 		'addContentLengthHeader'	=> false,
 		'renderer' => [
 			'template_path' => __DIR__ . '/../templates/'
+		],
+		'database' => [
+			'database_path' => __DIR__ . '/../database/'
 		]
 	]
 ];

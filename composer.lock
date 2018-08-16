@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0ac49e3d0e07103c1efda32511938f5",
+    "content-hash": "c9a8c97ce5f28b4a2670cfdf5bd98aac",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -36,6 +36,58 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "greg0/lazer-database",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Greg0/Lazer-Database.git",
+                "reference": "89fbfbf682bc87183ef7cfab8f6d2743b04a619c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Greg0/Lazer-Database/zipball/89fbfbf682bc87183ef7cfab8f6d2743b04a619c",
+                "reference": "89fbfbf682bc87183ef7cfab8f6d2743b04a619c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.6",
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lazer\\": "src/",
+                    "Lazer\\Test\\": "tests/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grzegorz Kuźnik",
+                    "email": "gerg0sz92@gmail.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "PHP library to use JSON files like flat-file database",
+            "homepage": "https://github.com/Greg0/Lazer-Database",
+            "keywords": [
+                "Simple",
+                "database",
+                "db",
+                "file",
+                "flat",
+                "json",
+                "lazer"
+            ],
+            "time": "2018-06-15T18:44:26+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -349,7 +401,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "slim/php-view": 20
+        "slim/php-view": 20,
+        "greg0/lazer-database": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

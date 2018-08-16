@@ -1,6 +1,13 @@
 <?php
 
-$app->get('/', function(Slim\Http\Request $request, Slim\Http\Response $response, array $args) {
-	$response = $this->renderer->render($response, 'index.phtml');	
-	return $response;
-});
+use Slim\Http\Request;
+use Slim\Http\Response;
+
+$app->group('/search', 
+	function() 
+	{
+		$this->get('/', \App\Controllers\SearchController::class . ':show');
+	}
+);
+
+$app->get('/', 'SearchController:show');
