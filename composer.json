@@ -4,7 +4,8 @@
     "require": {
         "slim/slim": "3.0",
         "slim/php-view": "dev-master",
-        "greg0/lazer-database": "dev-master"
+        "greg0/lazer-database": "dev-master",
+        "pdeans/http": "dev-master"
     },
 	"autoload": {
 		"psr-4": {
